@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomNameGenerator", "Rand
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomNameGeneratorTests", "RandomNameGeneratorTests\RandomNameGeneratorTests.csproj", "{735F879C-BE4A-4ECB-AA0B-F9F68A95C987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestNameGenerator", "ConsoleTestNameGenerator\ConsoleTestNameGenerator.csproj", "{A49E0A26-16D7-46E3-AE1B-39F075E388D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTestNameGenerator", "ConsoleTestNameGenerator\ConsoleTestNameGenerator.csproj", "{A49E0A26-16D7-46E3-AE1B-39F075E388D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF4EB934-41DF-4C22-875D-7DA47ADA2FF4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
