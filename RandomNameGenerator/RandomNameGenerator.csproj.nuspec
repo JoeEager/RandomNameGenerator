@@ -1,20 +1,28 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>C:\users\chord\Documents\Visual Studio 2017\Projects\RandomNameGenerator\RandomNameGenerator\RandomNameGenerator.csproj</id>
-    <version>1.0.0</version>
-    <authors>chord</authors>
-    <owners>chord</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <id>RandomNameGeneration</id>
+    <version>1.0.1</version>
+    <authors>Joe Eager</authors>
+    <owners>Joe Eager</owners>
+    <licenseUrl>https://github.com/JoeEager/RandomNameGenerator/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/JoeEager/RandomNameGenerator</projectUrl>
+    <iconUrl>https://www.nuget.org/Content/Images/packageDefaultIcon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package description</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>This .NET Core library will allow you to create random names based off of U.S. Census data.</description>
+    <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>Tag1 Tag2</tags>
-    <dependencies>
-      <dependency id="SampleDependency" version="1.0" />
+    <tags>RandomNameGenerator RandomNameGeneratorLibrary RandomNameGeneration Names Random Census</tags>
+	 <dependencies>
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="1.1.1" />
+		<dependency id="Microsoft.EntityFrameworkCore.Design" version="1.1.1" />
     </dependencies>
+  	<contentFiles>
+		<files include="**/names.db" buildAction="Content" copyToOutput ="true"/>
+	</contentFiles>
   </metadata>
+      <files>
+  		<file src="contentFiles\any\any\names.db" target="contentFiles\any\any\names.db" />
+		<file src="bin\Release\netcoreapp1.1\RandomNameGenerator.dll" target="lib\netcoreapp1.1\RandomNameGenerator.dll" />
+    </files>
 </package>
